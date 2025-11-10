@@ -7,10 +7,37 @@
     <title>js
 
     </title>
+    <style>
+        /* selctour universal */
+        * {
+            color: red;
+        }
+
+        /* selctour de type  */
+        p {
+            color: blue;
+        }
+
+        /* selecteur de class  */
+        .he {
+            border: solid;
+            color: beige;
+            background: red;
+        }
+        /* les secleur ddentifion */
+        #roo{
+         font: 100 red italic;
+         text-align: center;
+        }
+/* les delcteur datrubut */
+input[name = "taille"]{
+    background-color: rgb(0, 175, 181);
+}
+    </style>
 </head>
 
 <body>
-    <h1>Formuelzaire de participation</h1>
+    <h1 id="roo">Formuelzaire de participation</h1>
     <p>Complete la formulaire les cchomp marque * oubigatoir</p>
     <form action="">
         <fieldset>
@@ -21,7 +48,7 @@
             </p>
             <p>
                 <label for="Portable">Telfone</label>
-                <input required type="text" placeholder="06xxxxxxxx">
+                <input required name="taille" type="text" placeholder="06xxxxxxxx">
 
             </p>
             <p>
@@ -39,17 +66,18 @@
                 <label for="Age">Age</label>
                 <input required type="number" name="" id="" placeholder="xx">
             </p>
-            <p> <label for="">Ville</label> 
+            <p> <label for="">Ville</label>
                 <select name="ville" id="">
                     <label for="">Ville</label>
                     <option value="">Rabat</option>
                     <option value="">Casa</option>
                     <option value="">Nado</option>
                     <option value="">tonger</option>
-                </select></p>
+                </select>
+            </p>
             <p>
 
-            <h1>PourQoi Voooulez-vous vous impliquer dans l'organisation ?</h1>
+            <h1 class="he">PourQoi Voooulez-vous vous impliquer dans l'organisation ?</h1>
             <textarea name="messge" id=""></textarea>
             </p>
         </fieldset>
@@ -58,7 +86,7 @@
             <label for="">Infot</label>
             <legend>Coisisser Vos domains favoriss</legend>
             <label for="">Infot</label>
-            <input type="checkbox" name="" id="" value="Scince">
+            <input type="checkbox" name="taille" id="" value="Scince">
             <label for="">Infot</label>
             <input type="checkbox" name="" id="" value="culture">
             <label for="">سخسس</label>
@@ -66,6 +94,7 @@
         </fieldset>
         <input type="submit" value="Envoyer">
     </form>
+   
 
 </body>
 
