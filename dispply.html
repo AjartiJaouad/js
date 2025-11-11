@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs3 prporitea d'fichageage</title>
+
+</head>
+
+<body>
+    <fieldset>
+        <p>
+            <label for="">N1</label>
+            <input type="number" name="" id="N1">
+        </p>
+        <p>
+            <label for="">N2</label>
+            <input type="number" name="" id="N2" min="">
+        </p>
+        <input type="button" onclick="soumme()" value="+">
+        <input type="button" onclick="mult()" value="*">
+        <input type="button" onclick="div()" value="/">
+        
+        <p>RSesulta <br> <span id="rs">..</span></p>
+    </fieldset>
+    <script>
+        function soumme() {
+            let n1 = document.getElementById("N1").value;
+            let n2 = document.getElementById("N2").value;
+            let rse = document.getElementById("rs");
+            rse.innerHTML = parseFloat(n1)+parseFloat(n2);    
+        }
+        function mult() {
+            let n1 = document.getElementById("N1").value;
+            let n2 = document.getElementById("N2").value;
+            let rse = document.getElementById("rs");
+            rse.innerHTML = parseFloat(n1)*parseFloat(n2);    
+        }
+        function div(){
+            let n1 =document.getElementById("N1").value;
+            let n2 = document.getElementById("N2").value;
+            let rse = document.getElementById("rs");
+            n1= parseFloat(n1);
+            n2= parseFloat(n2);
+            if (n2==0){
+                alert("vouler choisier une outr valeur Pas 0"); 
+             }else if(n2<0){
+                alert("imposiblel")
+             }else{
+                rse.innerHTML = n1 /n2;
+             }
+
+        }
+    </script>
+</body>
+
+</html>
