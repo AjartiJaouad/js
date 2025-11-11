@@ -17,12 +17,13 @@
 
 // }
 
-function teste(){
-     let c1 = document.getElementById("ch1").value;
-     if (c1 =='JAvascript'){
-        alert('barvo');
-     }else{
-        alert('ereur voulez vou reussi')
-     }
+// function teste(){
+//      let c1 = document.getElementById("ch1").value;
+//      if (c1 =='JAvascript'){
+//         alert('barvo');
+//      }else{
+//         alert('Atontion voulez vou reussi')
+        
+//      }
 
- }
+//  }
