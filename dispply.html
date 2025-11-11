@@ -18,40 +18,40 @@
             <label for="">N2</label>
             <input type="number" name="" id="N2" min="">
         </p>
-        <input type="button" onclick="soumme()" value="+">
-        <input type="button" onclick="mult()" value="*">
-        <input type="button" onclick="div()" value="/">
-        
+      <p>
+        <fieldset>
+           <legend>Operation</legend> 
+           <input type="radio" name="op" id="s">
+           <label for="">somme</label>
+           <input type="radio" name="op" id="m">
+           <label for="">multiplication</label>
+           <input type="radio" name="op" id="d">
+           <label for="">Division</label>
+           
+        </fieldset>
+        <p>
+        <button type="button" onclick="egal()">=</button></p>
+      </p>
         <p>RSesulta <br> <span id="rs">..</span></p>
     </fieldset>
     <script>
-        function soumme() {
-            let n1 = document.getElementById("N1").value;
-            let n2 = document.getElementById("N2").value;
-            let rse = document.getElementById("rs");
-            rse.innerHTML = parseFloat(n1)+parseFloat(n2);    
-        }
-        function mult() {
-            let n1 = document.getElementById("N1").value;
-            let n2 = document.getElementById("N2").value;
-            let rse = document.getElementById("rs");
-            rse.innerHTML = parseFloat(n1)*parseFloat(n2);    
-        }
-        function div(){
-            let n1 =document.getElementById("N1").value;
-            let n2 = document.getElementById("N2").value;
-            let rse = document.getElementById("rs");
-            n1= parseFloat(n1);
-            n2= parseFloat(n2);
-            if (n2==0){
-                alert("vouler choisier une outr valeur Pas 0"); 
-             }else if(n2<0){
-                alert("imposiblel")
-             }else{
-                rse.innerHTML = n1 /n2;
-             }
+      function egal(){
+        let n1 = document.getElementById("N1").value;
+        let n2 = document.getElementById("N2").value;
+        let rse = document.getElementById("rs");
+        // cherche lopertion 
+        let somme = document.getElementById("s")
+        let mult = document.getElementById("m")
+        let div = document.getElementById("d")
+        if (somme.checked )
+        rse.innerHTML = parseFloat(n1) + parseFloat(n2);
+        if (mult.checked )
+        rse.innerHTML = parseFloat(n1) * parseFloat(n2);
+        if (div.checked )
+        rse.innerHTML = parseFloat(n1) / parseFloat(n2);
 
-        }
+        
+      }
     </script>
 </body>
 
