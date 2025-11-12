@@ -6,9 +6,8 @@
 
 // res.innerHTML = `le racine de ${ numbre} est ${h}
 // les object 
-const store ={
-    customers :278,
-    turnvvel :54622,
-    employer :3;,
-    rent :4
-}
+// les tableaux 
+const user = ["Paule", "ana", "amine","vicore"]
+
+console.log(user.length)
+console.log(user[user.length -1])
