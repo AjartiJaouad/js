@@ -11,18 +11,24 @@
 // }
 
 // condtion if else 
-let age = 19;
+// let age = 19;
 
-if (age >= 18) {
-    console.log("majour")
-} else if (age >= 0 && age < 18) {
-    console.log("mineur")
-}
-let role = "j";
-if (role === "admin") {
-    console.log("admin")
-} else if (role === "employer") {
-    console.log("Emplyer")
-} else {
-    console.log("hhhh")
+// if (age >= 18) {
+//     console.log("majour")
+// } else if (age >= 0 && age < 18) {
+//     console.log("mineur")
+// }
+// let role = "j";
+// if (role === "admin") {
+//     console.log("admin")
+// } else if (role === "employer") {
+//     console.log("Emplyer")
+// } else {
+//     console.log("hhhh")
+// }
+let isLoge = false ;
+if(isLoge){
+    console.log("welcom")
+}else{
+    console.log("acccer definde")
 }
